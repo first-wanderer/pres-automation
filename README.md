@@ -10,6 +10,5 @@
 git clone https://github.com/operatino/pres-automation.git
 cd pres-automation
 npm install
+open automation/index.html
 ```
-
-и открываем `automation/index.html`.
