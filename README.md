@@ -1,10 +1,15 @@
 Презентация «Автоматизация фронтенда сегодня и завтра»
 ===============
 
-Для запуска запустите команду:
+В сети - http://rhr.me/pres/automation.
+
+
+Для запуска локально, отправляем в консоль:
 
 ```
+git clone https://github.com/operatino/pres-automation.git
+cd pres-automation
 npm install
 ```
 
-и откройте `automation/index.html`.
+и открываем `automation/index.html`.
