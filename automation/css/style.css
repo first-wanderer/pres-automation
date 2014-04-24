@@ -59,7 +59,13 @@
     min-width: 100%;
     left: -1px;
     top: 0;
+	background-color: #fff; /* TODO: add loading bar */
     }
+
+.mobile .video_wrapper {
+	position: relative;
+	height: 300px;
+	}
 
 #hail-node {
 
@@ -110,3 +116,21 @@
 #perf h2 {
     font-size: 110px;
     }
+
+.mobile .hide-for-mobile {
+	display: none !important;
+	}
+
+.mobile .slide .video_wrapper {
+	display: none;
+	}
+
+.mobile .slide .video_wrapper video {
+	top: 0 !important;
+	left: 0 !important;
+	height: 100% !important;
+	}
+
+.mobile .slide.active .video_wrapper {
+	display: block;
+	}

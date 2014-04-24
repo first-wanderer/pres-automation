@@ -14,6 +14,23 @@
 
             body[0].classList.add('modernizr-h264');
         }
+
+	    var isMobile = false;
+
+		if (navigator.userAgent.match(/Android/i)
+		|| navigator.userAgent.match(/webOS/i)
+		|| navigator.userAgent.match(/iPhone/i)
+		|| navigator.userAgent.match(/iPad/i)
+		|| navigator.userAgent.match(/iPod/i)
+		|| navigator.userAgent.match(/BlackBerry/i)
+		|| navigator.userAgent.match(/Windows Phone/i)
+		) {
+		    var body = document.getElementsByTagName('html');
+
+		    isMobile = true;
+
+		    body[0].classList.add('mobile');
+		}
     </script>
 
 </head>
@@ -31,7 +48,7 @@
 </header>
 
 <section class="slide shout brand-bg" id="Cover"><div>
-    <div class="intro-video">
+    <div class="intro-video hide-for-mobile">
         <video preload loop>
             <source src="videos/build.mp4" type="video/mp4;">
         </video>
@@ -397,11 +414,13 @@
 <section class="slide clean"><div>
     <h2>Демонстрация работы Dalek.js</h2>
 
-    Что бы посмотреть видео, откройте, пожалуйста, презентацию в браузере с поддержкой .mp4 — например Chrome.
+	<div class="video_wrapper">
+        Что бы посмотреть видео, откройте, пожалуйста, презентацию в браузере с поддержкой .mp4 — например Chrome.
 
-    <video class="place l t" preload style="height: 145%;">
-        <source src="videos/dalek.mp4" type="video/mp4;">
-    </video>
+	    <video class="place l t" preload style="height: 145%; left: -96px;">
+	        <source src="videos/dalek.mp4" type="video/mp4;">
+	    </video>
+    </div>
 </div></section>
 
 <section class="slide clean" style="text-align: center"><div>
@@ -481,11 +500,13 @@
 
     <h2>Демонстрация работы yo</h2>
 
-    Что бы посмотреть видео, откройте, пожалуйста, презентацию в браузере с поддержкой .mp4 — например Chrome.
+	<div class="video_wrapper">
+        Что бы посмотреть видео, откройте, пожалуйста, презентацию в браузере с поддержкой .mp4 — например Chrome.
 
-	<video class="place l t" preload="" style="left: -80px; height: 120%;">
-        <source src="videos/yo.mp4" type="video/mp4;">
-    </video>
+		<video class="place l t" preload="" style="left: -80px; height: 120%;">
+	        <source src="videos/yo.mp4" type="video/mp4;">
+	    </video>
+    </div>
 </div></section>
 
 <section class="slide"><div>
