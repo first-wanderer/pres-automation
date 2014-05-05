@@ -34,14 +34,6 @@
         border-radius: 10px;
         }
 
-    #Cover .intro-video {
-        display: none;
-        }
-
-    .modernizr-h264 #Cover .intro-video {
-        display: block;
-        }
-
 .overlay {
     position: absolute;
     left: 0;
