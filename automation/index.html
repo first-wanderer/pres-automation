@@ -7,24 +7,10 @@
     <link rel="stylesheet" href="../node_modules/shower-ok/styles/screen.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <script>
-	    var isMobile = false;
-
-		if (navigator.userAgent.match(/Android/i)
-		|| navigator.userAgent.match(/webOS/i)
-		|| navigator.userAgent.match(/iPhone/i)
-		|| navigator.userAgent.match(/iPad/i)
-		|| navigator.userAgent.match(/iPod/i)
-		|| navigator.userAgent.match(/BlackBerry/i)
-		|| navigator.userAgent.match(/Windows Phone/i)
-		) {
-		    var body = document.getElementsByTagName('html');
-
-		    isMobile = true;
-
-		    body[0].classList.add('mobile');
-		}
-    </script>
+	<!--Video plugin-->
+    <link rel="stylesheet" href="../node_modules/shower-video/shower-video.css">
+	<script src="../node_modules/shower-video/shower-video.min.js"></script>
+    <!--/Video plugin-->
 
 </head>
 <body class="list">
@@ -40,21 +26,21 @@
 
 </header>
 
-<section class="slide shout brand-bg" id="Cover"><div>
+<section class="slide shout cover h" id="Cover"><div>
     <div class="intro-video hide-for-mobile">
-        <video preload loop>
+        <video class="background" preload loop>
             <source src="videos/build.mp4" type="video/mp4;">
             <source src="videos/build.webm" type="video/webm;">
         </video>
 
-        <div class="overlay" ></div>
+        <div class="overlay"></div>
     </div>
 
     <h2 class="bold light">Автоматизация фронтенда<br> <span>сегодня и завтра</span></h2>
 
     <div class="place b author">
         <div><a href="http://rhr.me" class="bl">Роберт Харитонов</a></div>
-        <img class="ok" src="../node_modules/shower-ok/images/ok-logo-or.svg" alt="одноклассники">
+        <img class="ok uncover" src="../node_modules/shower-ok/images/ok-logo-or.svg" alt="одноклассники">
     </div>
 </div></section>
 
@@ -465,19 +451,19 @@
     </ul>
 </div></section>
 
-<!--<section class="slide"><div>-->
-    <!--<h2>Свои заготовки c Грантом</h2>-->
+<section class="slide"><div>
+    <h2>Свои заготовки c Грантом</h2>
 
-    <!--<ul>-->
-        <!--<li>Определяем требования</li>-->
-        <!--<li class="next">Настраиваем плагины под себя</li>-->
-        <!--<li class="next">Учимся у <a href="https://github.com/Integralist/Grunt-Boilerplate">других</a></li>-->
-        <!--<li class="next">Chrome + Grunt = <a href="https://github.com/vladikoff/grunt-devtools">grunt-devtools</a></li>-->
-        <!--<li class="next">Скаффолдинг с <a href="http://nano.sapegin.ru/all/sozdanie-faylov-i-struktury-proekta-po-shablonam-s-pomoschyu-gru">Grunt-init</a></li>-->
-    <!--</ul>-->
+    <ul>
+        <li>Определяем требования</li>
+        <li class="next">Настраиваем плагины под себя</li>
+        <li class="next">Учимся у <a href="https://github.com/Integralist/Grunt-Boilerplate">других</a></li>
+        <li class="next">Chrome + Grunt = <a href="https://github.com/vladikoff/grunt-devtools">grunt-devtools</a></li>
+        <li class="next">Скаффолдинг с <a href="http://nano.sapegin.ru/all/sozdanie-faylov-i-struktury-proekta-po-shablonam-s-pomoschyu-gru">Grunt-init</a></li>
+    </ul>
 
-    <!--<p class="note" style="margin-top: 2em;"><a class="lp" href="http://frontender.info/grunt-is-not-weird-and-hard/">Grunt для начинающих</a></p>-->
-<!--</div></section>-->
+    <p class="note" style="margin-top: 2em;"><a class="lp" href="http://frontender.info/grunt-is-not-weird-and-hard/">Grunt для начинающих</a></p>
+</div></section>
 
 <section class="slide"><div>
     <h2>Скаффолдинг</h2>
@@ -491,14 +477,14 @@
     </ul>
 </div></section>
 
-<section class="slide clean"><div>
+<section class="slide cover clean"><div>
 
     <h2>Демонстрация работы yo</h2>
 
 	<div class="video_wrapper">
-        Что бы посмотреть видео, откройте, пожалуйста, презентацию в браузере с поддержкой .mp4 — например Chrome.
+        Что бы посмотреть видео, откройте, пожалуйста, презентацию в браузере с поддержкой .mp4 или .webm.
 
-		<video class="place l t" preload="" style="left: -80px; height: 120%;">
+		<video preload style="left: -80px; height: 120%;">
 	        <source src="videos/yo.mp4" type="video/mp4;">
 	        <source src="videos/yo.webm" type="video/webm;">
 	    </video>
@@ -576,10 +562,7 @@
 </div></section>
 
 <div class="progress"><div></div></div>
-<script src="../node_modules/shower/node_modules/shower-core/shower.min.js"></script>
-
-<script src="js/jquery-2.1.0.min.js"></script>
-<script src="js/script.js"></script>
+<script src="../node_modules/shower-core/shower.min.js"></script>
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
