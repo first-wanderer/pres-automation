@@ -30,9 +30,12 @@
 
     #Cover .ok {
         margin-top: 10px;
-        height: 65px;
-        border-radius: 10px;
+        border-bottom: none;
         }
+        #Cover .ok img {
+            height: 65px;
+            border-radius: 10px;
+            }
 
 .overlay {
     position: absolute;
