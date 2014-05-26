@@ -20,7 +20,7 @@
     <p><a href="http://rhr.me">Роберт Харитонов</a>, <a href="http://corp.mail.ru/communications/odnoklassniki">Одноклассники</a></p>
 
 	<p style="font-size:.8em;"><a href="http://fdconf.by">Front-end Dev Conf</a>, Минск, 2014</p>
-	<p style="font-size:.8em;">Web Standards Days, <a href="http://webstandardsdays.ru/2014/05/24/">Рига</a>, 2014 + <a href="http://webskola.lv/ru/study/programming/professional-frontend">мастер-класс по автоматизации</a> в Риге и в <a href="http://www.smartme.com.ua/workshops/avtomatizaciya-frontenda">Киеве</a></p>
+	<p style="font-size:.8em;">Web Standards Days, <a href="http://webstandardsdays.ru/2014/05/24/">Рига</a>, 2014 + <a href="http://bit.ly/riga-automation">мастер-класс по автоматизации</a> в Риге и в <a href="http://bit.ly/kiev-automation">Киеве</a></p>
 
     <a href="https://github.com/operatino/pres-automation"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
 
@@ -151,6 +151,7 @@
     <ul>
         <li><a href="https://github.com/gruntjs/grunt-contrib-imagemin">Imagemin</a><span class="next">, только по <a href="https://github.com/tschaub/grunt-newer">измененным файлам</a></span></li>
         <li><a href="https://github.com/svg/svgo">SVGO</a></li>
+        <li class="next">Webp + <a href="http://github.com/lexich/grunt-webpcss">grunt-webpcss</a> + <a href="https://github.com/somerandomdude/grunt-webp">grunt-webp</a></li>
     </ul>
 </div></section>
 
@@ -317,11 +318,13 @@
 <section class="slide"><div>
     <h2>Rework</h2>
 
-	<div class="process" style="margin-top: 4em;">
+	<div class="process" style="margin-top: 3em; margin-bottom: 2em;">
 		<div class="process_i __arrw">CSS парсер</div
 		><div class="process_i __arrw next"><strong>Обработка</strong></div
 		><div class="process_i next">Компилятор</div>
 	</div>
+
+    <div class="next">Другие движки для постпроцессоров — <a href="https://github.com/ai/postcss">PostCSS</a>, <a href="https://github.com/andreypopp/xcss">XCSS</a>, <a href="https://github.com/bleuebuzz/everycss">EveryCSS</a></div>
 </div></section>
 
 <section class="slide"><div>
@@ -331,9 +334,8 @@
 
     <ul>
         <li class="next"><a href="https://github.com/ai/autoprefixer">Autoprefixer</a></li>
-        <li class="next"><a href="http://www.myth.io/">Myth</a> — CSS-полифил</li>
+        <li class="next"><a href="http://www.myth.io/">Myth</a>, <a href="https://github.com/robwierzbowski/grunt-pixrem">grunt-pixrem</a> — CSS-полифилы</li>
         <li class="next">И сам <a href="https://github.com/reworkcss/rework">Rework</a></li>
-        <li class="next"><strong>Будущее за постпроцессингом</strong></li>
     </ul>
 
 </div></section>
@@ -341,7 +343,7 @@
 <section class="slide"><div>
     <h2>HTML и JS</h2>
 
-    <strong>BEM</strong>
+    <strong>Full stack технологии</strong>
 
     <ul>
         <li class="next">Автоматизация с акцентом на сущности</li>
@@ -444,19 +446,19 @@
     </ul>
 </div></section>
 
-<!--<section class="slide"><div>-->
-    <!--<h2>Свои заготовки c Грантом</h2>-->
+<section class="slide"><div>
+    <h2>Свои заготовки c Грантом</h2>
 
-    <!--<ul>-->
-        <!--<li>Определяем требования</li>-->
-        <!--<li class="next">Настраиваем плагины под себя</li>-->
-        <!--<li class="next">Учимся у <a href="https://github.com/Integralist/Grunt-Boilerplate">других</a></li>-->
-        <!--<li class="next">Chrome + Grunt = <a href="https://github.com/vladikoff/grunt-devtools">grunt-devtools</a></li>-->
-        <!--<li class="next">Скаффолдинг с <a href="http://nano.sapegin.ru/all/sozdanie-faylov-i-struktury-proekta-po-shablonam-s-pomoschyu-gru">Grunt-init</a></li>-->
-    <!--</ul>-->
+    <ul>
+        <li>Определяем требования</li>
+        <li class="next">Настраиваем плагины под себя</li>
+        <li class="next">Учимся у <a href="https://github.com/Integralist/Grunt-Boilerplate">других</a></li>
+        <li class="next">Chrome + Grunt = <a href="https://github.com/vladikoff/grunt-devtools">grunt-devtools</a></li>
+        <li class="next">Скаффолдинг с <a href="http://nano.sapegin.ru/all/sozdanie-faylov-i-struktury-proekta-po-shablonam-s-pomoschyu-gru">Grunt-init</a></li>
+    </ul>
 
-    <!--<p class="note" style="margin-top: 2em;"><a class="lp" href="http://frontender.info/grunt-is-not-weird-and-hard/">Grunt для начинающих</a></p>-->
-<!--</div></section>-->
+    <p class="note" style="margin-top: 2em;"><a class="lp" href="http://frontender.info/grunt-is-not-weird-and-hard/">Grunt для начинающих</a></p>
+</div></section>
 
 <section class="slide"><div>
     <h2>Скаффолдинг</h2>
