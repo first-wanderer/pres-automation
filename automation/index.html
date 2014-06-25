@@ -19,8 +19,8 @@
     <h1>Автоматизация фронтенда — сегодня и завтра</h1>
     <p><a href="http://rhr.me">Роберт Харитонов</a>, <a href="http://corp.mail.ru/communications/odnoklassniki">Одноклассники</a></p>
 
-	<p style="font-size:.8em;"><a href="http://fdconf.by">Front-end Dev Conf</a>, Минск, 2014. <a href="http://www.youtube.com/watch?v=Fe5fW-WtQSI">Видео запись</a>.</p>
-	<p style="font-size:.8em;">Web Standards Days, <a href="http://webstandardsdays.ru/2014/05/24/">Рига</a>, <a href="http://webstandardsdays.ru/2014/06/28/">Питер</a> 2014 + <a href="http://bit.ly/riga-automation">мастер-класс по автоматизации</a> в Риге и в <a href="http://bit.ly/kiev-automation">Киеве</a>.</p>
+	<p style="font-size:.8em;"><a href="http://fdconf.by">Front-end Dev Conf</a>, Минск, 2014 (<a href="http://www.youtube.com/watch?v=Fe5fW-WtQSI">видео</a>).</p>
+	<p style="font-size:.8em;">Web Standards Days, <a href="http://webstandardsdays.ru/2014/05/24/">Рига</a>, <a href="http://webstandardsdays.ru/2014/06/28/">Питер</a> 2014 + 8 часовой мастер-класс по автоматизации в <a href="http://bit.ly/riga-automation">Риге</a> и в <a href="http://bit.ly/kiev-automation">Киеве</a>.</p>
 
     <a href="https://github.com/operatino/pres-automation"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
 
@@ -69,9 +69,9 @@
     <h2>Автоматизируй все!</h2>
 
     <ol>
-        <li>Производительность</li>
+        <li>Быстродействие</li>
         <li class="next">Проверка кода</li>
-        <li class="next">Пре/пост-процессинг</li>
+        <!--<li class="next">Пре/пост-процессинг</li>-->
         <li class="next">Тестирование</li>
         <li class="next"><strong>Разработка</strong></li>
     </ol>
@@ -88,7 +88,7 @@
 
 </div></section>
 
-<section class="slide clean" id="grunt"><div>
+<section class="slide clean grunt"><div>
     <h2>Grunt JS</h2>
 
     <img width="300" src="i/grunt.svg" alt="grunt"/>
@@ -96,16 +96,24 @@
     <p class="next">И его 2500+ плагинов</p>
 </div></section>
 
+<section class="slide clean grunt"><div>
+    <h2>Grunt JS</h2>
+
+    <img width="300" src="i/grunt.svg" alt="grunt"/>
+
+    <p>И его <del>2500+</del> <strong>3000+</strong> плагинов</p>
+</div></section>
+
 <section class="slide"><div>
-    <h2>Не Грантом едины</h2>
+    <h2>Не Грантом единым</h2>
 
     <strong>Task Runners</strong>
 
     <ul>
         <li><a href="http://gruntjs.com/">Grunt</a> - это конфиг</li>
         <li><a href="http://gulpjs.com/">Gulp</a> - API</li>
-        <li><a href="http://brunch.io/">Brunch</a></li>
-        <li class="next">Будущее с <a href="https://github.com/node-task/spec/wiki">node-task</a></li>
+        <!--<li><a href="http://brunch.io/">Brunch</a></li>-->
+        <!--<li class="next">Будущее с <a href="https://github.com/node-task/spec/wiki">node-task</a></li>-->
     </ul>
 </div></section>
 
@@ -120,14 +128,14 @@
 
 
 
-<!-- Производительность -->
+<!-- Быстродействие -->
 
 
 
 <section class="slide shout" id="perf"><div>
     <!--TODO: картинку-->
 
-    <h2>Производительность</h2>
+    <h2>Быстродействие</h2>
 </div></section>
 
 <section class="slide clean"><div>
@@ -140,8 +148,8 @@
     <h2>Первым делом</h2>
 
     <ol>
-        <li>Компрессия CSS, HTML, JS</li>
-        <li class="next">Спрайты - <a href="http://csssprites.org/">Smart Sprites</a><span class="next">, <a href="https://github.com/Ensighten/grunt-spritesmith">Spritesmith</a></span><span class="next">, <a href="https://github.com/FWeinb/grunt-svgstore">SVG</a></span></li>
+        <li>Сжатие CSS, HTML, JS</li>
+        <li class="next">Спрайты - <a href="http://csssprites.org/">Smart Sprites</a><span class="next">, <a href="https://github.com/Ensighten/grunt-spritesmith">Spritesmith</a></span><span class="next">, SVG <span class="lp">(<a href="https://github.com/FWeinb/grunt-svgstore">grunt-svgstore</a>)</span></span></li>
     </ol>
 </div></section>
 
@@ -149,9 +157,9 @@
     <h2>Графика</h2>
 
     <ul>
-        <li><a href="https://github.com/gruntjs/grunt-contrib-imagemin">Imagemin</a><span class="next">, только по <a href="https://github.com/tschaub/grunt-newer">измененным файлам</a></span></li>
+        <li><a href="https://github.com/gruntjs/grunt-contrib-imagemin">Imagemin</a><span class="next">, только по измененным файлам с <a href="https://github.com/tschaub/grunt-newer">grunt-newer</a></span></li>
         <li><a href="https://github.com/svg/svgo">SVGO</a></li>
-        <li class="next">Webp + <a href="http://github.com/lexich/grunt-webpcss">grunt-webpcss</a> + <a href="https://github.com/somerandomdude/grunt-webp">grunt-webp</a></li>
+        <li class="next">WebP + <a href="http://github.com/lexich/grunt-webpcss">grunt-webpcss</a> + <a href="https://github.com/somerandomdude/grunt-webp">grunt-webp</a></li>
     </ul>
 </div></section>
 
@@ -160,22 +168,23 @@
 
     <ul>
         <li>Умные компрессоры, как <a href="https://github.com/css/csso">CSSO</a></li>
-        <li class="next"><a href="https://github.com/buildingblocks/grunt-combine-media-queries">Объединение</a> Media Query</li>
-        <li class="next">Чистка лишнего <a href="https://github.com/addyosmani/grunt-uncss">CSS</a> <span class="next">и <a href="https://developers.google.com/closure/compiler/">JS</a></span></li>
-        <li class="next">+ <a href="http://zmoazeni.github.io/csscss/">CSSCSS</a> для проверки дублированных свойств</li>
+        <li class="next">Объединение Media Query <span class="lp">(<a href="https://github.com/buildingblocks/grunt-combine-media-queries">grunt-combine-media-queries</a>)</span></li>
+        <li class="next">Чистка лишнего CSS <span class="next">и JS <span class="lp">(<a href="https://github.com/addyosmani/grunt-uncss">grunt-uncss</a>, <a href="https://developers.google.com/closure/compiler/">Google Closure</a>)</span></span></li>
+        <!--<li class="next">+ <a href="http://zmoazeni.github.io/csscss/">CSSCSS</a> для проверки дублированных свойств</li>-->
+        <li class="next">Генерация Critical CSS c запущенного сайта <span class="lp">(<a href="https://github.com/pocketjoso/penthouse">penthouse</a>)</span></li>
     </ul>
 </div></section>
 
 <section class="slide"><div>
     <h2>Как мерять</h2>
 
-    Помимо статистики с пользователей:
+    Помимо статистики пользователей:
 
     <ul>
         <li><a href="https://github.com/jrcryer/grunt-pagespeed">Google PageSpeed + Grunt</a></li>
         <li class="next"><a href="https://www.npmjs.org/package/grunt-devperf">Тесты c PhatnomJS</a> или <a href="https://github.com/axemclion/browser-perf">Selenium</a></li>
-        <li class="next"><a href="https://github.com/roman01la/grunt-load-perf">Скриншоты</a> загрузки на медленных соединениях</li>
-        <li class="next"><a href="https://github.com/rwaldron/grunt-compare-size">Сравнение веса</a> ресурсов</li>
+        <li class="next">Скриншоты загрузки на медленных соединениях <span class="lp">(<a href="https://github.com/roman01la/grunt-load-perf">grunt-load-perf</a>)</span></li>
+        <li class="next">Сравнение веса ресурсов <span class="lp">(<a href="https://github.com/rwaldron/grunt-compare-size">grunt-compare-size</a>)</span></li>
     </ul>
 </div></section>
 
@@ -191,19 +200,17 @@
 
 </div></section>
 
-<section class="slide"><div>
-    <h2>Что еще</h2>
+<!--<section class="slide"><div>-->
+    <!--<h2>Что еще</h2>-->
 
-    <div class="fz-l">Анализ используемых модулей и предзагрузка<div class="next"> c <a href="http://bem.info/">БЭМ</a>-подобными экосистемами.</div></div>
-</div></section>
+    <!--<div class="fz-l">Анализ используемых модулей и предзагрузка<div class="next"> c <a href="http://bem.info/">БЭМ</a>-подобными экосистемами.</div></div>-->
+<!--</div></section>-->
 
-<section class="slide shout"><div>
-    <img class="place m" style="margin-top: -50px" width="700" src="i/analyze.png" alt="Шутка о .js"/>
+<!--<section class="slide shout"><div>-->
+    <!--<img class="place m" style="margin-top: -50px" width="700" src="i/analyze.png" alt="Шутка о .js"/>-->
 
-    <p class="note place b"><a class="lp" href="https://twitter.com/operatino/status/453973248775299073">источник</a></p>
-</div></section>
-
-
+    <!--<p class="note place b"><a class="lp" href="https://twitter.com/operatino/status/453973248775299073">источник</a></p>-->
+<!--</div></section>-->
 
 <!-- Проверка кода -->
 
@@ -222,21 +229,21 @@
         <li>JS <a href="https://github.com/stephenmathieson/grunt-jslint">Lint</a>, <a href="https://github.com/gruntjs/grunt-contrib-jshint">Hint</a> <span class="next">и сразу <a href="https://github.com/jonschlinkert/grunt-fixmyjs">таблетка</a></span></li>
         <li><a href="https://github.com/gruntjs/grunt-contrib-csslint">CSS Lint</a></li>
         <li><a href="https://github.com/philipwalton/html-inspector">HTML inspector</a></li>
-        <li class="next">Валидаторы стандартов, Coffee, Less, SCSS, JSON, jQuery</li>
+        <li class="next">Coffee, Less, SCSS, JSON, jQuery</li>
     </ul>
 
 </div></section>
 
-<section class="slide"><div>
-    <h2>Это еще не все</h2>
+<!--<section class="slide"><div>-->
+    <!--<h2>Это еще не все</h2>-->
 
-    Проверяем Доступность:
-    <ul>
-        <li><a href="https://github.com/globant-ui/arialinter">Aria linter</a></li>
-        <li><a href="https://github.com/yargalot/grunt-accessibility">Проверка на WCAG стандарты</a></li>
-    </ul>
-
-</div></section>
+    <!--Проверяем доступность:-->
+    <!--<ul>-->
+        <!--<li><a href="https://github.com/globant-ui/arialinter">ARIA linter</a></li>-->
+        <!--<li><a href="https://github.com/yargalot/grunt-accessibility">Проверка на WCAG стандарты</a></li>-->
+    <!--</ul>-->
+    <!---->
+<!--</div></section>-->
 
 <section class="slide"><div>
     <h2>Немного помечтаем</h2>
@@ -245,8 +252,8 @@
 
     <ul>
         <li>Автопроверка по списку требований</li>
-        <li class="next">Набор скриншотов с браузеров</li>
-        <li class="next">Проверка code style<span class="next"> (частично в <a href="https://github.com/philipwalton/html-inspector">html-inspector</a>)</span></li>
+        <li>Набор скриншотов из браузеров</li>
+        <li>Проверка стиля кодирования<span class="next"> (частично в <a href="https://github.com/philipwalton/html-inspector">html-inspector</a>)</span></li>
     </ul>
 
 
@@ -258,99 +265,99 @@
 
 
 
-<section class="slide shout" id="processing"><div>
-    <!--TODO: картинку-->
+<!--<section class="slide shout" id="processing"><div>-->
+    <!--&lt;!&ndash;TODO: картинку&ndash;&gt;-->
 
-    <h2>*-процессинг</h2>
-</div></section>
+    <!--<h2>*-процессинг</h2>-->
+<!--</div></section>-->
 
-<section class="slide"><div>
-    <h2>Что у нас есть</h2>
+<!--<section class="slide"><div>-->
+    <!--<h2>Что у нас есть</h2>-->
 
-    <ul>
-        <li>SASS, LESS, Stylus</li>
-        <li>Slim, <strong>Jade, EJS</strong></li>
-        <li>Coffee</li>
-        <li class="next"><a href="https://github.com/paulmillr/es6-shim">ES6 Shim</a></li>
-	    <li class="next"><strong style="font-size: 1.5em">Rework!</strong></li>
-    </ul>
+    <!--<ul>-->
+        <!--<li>SASS, LESS, Stylus</li>-->
+        <!--<li>Slim, <strong>Jade, EJS</strong></li>-->
+        <!--<li>Coffee</li>-->
+        <!--<li class="next"><a href="https://github.com/paulmillr/es6-shim">ES6 Shim</a></li>-->
+	    <!--<li class="next"><strong style="font-size: 1.5em">Rework!</strong></li>-->
+    <!--</ul>-->
 
-</div></section>
+<!--</div></section>-->
 
 
-<style>
-    .process {
-        margin-top: 30px;
-        margin-left: -7%;
-        }
+<!--<style>-->
+    <!--.process {-->
+        <!--margin-top: 30px;-->
+        <!--margin-left: -7%;-->
+        <!--}-->
 
-    .process_i {
-        position: relative;
-        display: inline-block;
-        vertical-align: top;
-        width: 26%;
-        margin-left: 7%;
-        border: solid 4px #EB7218;
-        text-align: center;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        padding: 50px 10px 0;
-        min-height: 130px;
-        border-radius: 10px;
-        line-height: 1.2;
-        }
+    <!--.process_i {-->
+        <!--position: relative;-->
+        <!--display: inline-block;-->
+        <!--vertical-align: top;-->
+        <!--width: 26%;-->
+        <!--margin-left: 7%;-->
+        <!--border: solid 4px #EB7218;-->
+        <!--text-align: center;-->
+        <!---moz-box-sizing: border-box;-->
+        <!---webkit-box-sizing: border-box;-->
+        <!--box-sizing: border-box;-->
+        <!--padding: 50px 10px 0;-->
+        <!--min-height: 130px;-->
+        <!--border-radius: 10px;-->
+        <!--line-height: 1.2;-->
+        <!--}-->
 
-    .process_i.__arrw:after {
-        content: "➧";
-        position: absolute;
-        top: 50%;
-        color: #eb722e;
-        left: 100%;
-        font-size: 75px;
-        margin-left: 15px;
-        line-height: 0;
-        border-radius: 13px;
-        }
+    <!--.process_i.__arrw:after {-->
+        <!--content: "➧";-->
+        <!--position: absolute;-->
+        <!--top: 50%;-->
+        <!--color: #eb722e;-->
+        <!--left: 100%;-->
+        <!--font-size: 75px;-->
+        <!--margin-left: 15px;-->
+        <!--line-height: 0;-->
+        <!--border-radius: 13px;-->
+        <!--}-->
 
-</style>
+<!--</style>-->
 
-<section class="slide"><div>
-    <h2>Rework</h2>
+<!--<section class="slide"><div>-->
+    <!--<h2>Rework</h2>-->
 
-	<div class="process" style="margin-top: 3em; margin-bottom: 2em;">
-		<div class="process_i __arrw">CSS парсер</div
-		><div class="process_i __arrw next"><strong>Обработка</strong></div
-		><div class="process_i next">Компилятор</div>
-	</div>
+	<!--<div class="process" style="margin-top: 3em; margin-bottom: 2em;">-->
+		<!--<div class="process_i __arrw">CSS парсер</div-->
+		<!--<div class="process_i __arrw next"><strong>Обработка</strong></div>-->
+		<!--<div class="process_i next">Компилятор</div>-->
+	<!--</div>-->
 
-    <div class="next">Другие движки для постпроцессоров — <a href="https://github.com/ai/postcss">PostCSS</a>, <a href="https://github.com/andreypopp/xcss">XCSS</a>, <a href="https://github.com/bleuebuzz/everycss">EveryCSS</a></div>
-</div></section>
+    <!--<div class="next">Другие движки для постпроцессоров — <a href="https://github.com/ai/postcss">PostCSS</a>, <a href="https://github.com/andreypopp/xcss">XCSS</a>, <a href="https://github.com/bleuebuzz/everycss">EveryCSS</a></div>-->
+<!--</div></section>-->
 
-<section class="slide"><div>
-    <h2>CSS постпроцессоры</h2>
+<!--<section class="slide"><div>-->
+    <!--<h2>CSS постпроцессоры</h2>-->
 
-    <strong>Вдохновленные Rework'ом</strong>
+    <!--<strong>Вдохновленные Rework'ом</strong>-->
 
-    <ul>
-        <li class="next"><a href="https://github.com/ai/autoprefixer">Autoprefixer</a></li>
-        <li class="next"><a href="http://www.myth.io/">Myth</a>, <a href="https://github.com/robwierzbowski/grunt-pixrem">grunt-pixrem</a> — CSS-полифилы</li>
-        <li class="next">И сам <a href="https://github.com/reworkcss/rework">Rework</a></li>
-    </ul>
+    <!--<ul>-->
+        <!--<li class="next"><a href="https://github.com/ai/autoprefixer">Autoprefixer</a></li>-->
+        <!--<li class="next"><a href="http://www.myth.io/">Myth</a>, <a href="https://github.com/robwierzbowski/grunt-pixrem">grunt-pixrem</a> — CSS-полифилы</li>-->
+        <!--<li class="next">И сам <a href="https://github.com/reworkcss/rework">Rework</a></li>-->
+    <!--</ul>-->
 
-</div></section>
+<!--</div></section>-->
 
-<section class="slide"><div>
-    <h2>HTML и JS</h2>
+<!--<section class="slide"><div>-->
+    <!--<h2>HTML и JS</h2>-->
 
-    <strong>Full stack технологии</strong>
+    <!--<strong>Full stack технологии</strong>-->
 
-    <ul>
-        <li class="next">Автоматизация с акцентом на сущности</li>
-        <li class="next"><strong>Стандартные модули интерфейсов</strong></li>
-    </ul>
+    <!--<ul>-->
+        <!--<li class="next">Автоматизация с акцентом на сущности</li>-->
+        <!--<li class="next"><strong>Стандартные модули интерфейсов</strong></li>-->
+    <!--</ul>-->
 
-</div></section>
+<!--</div></section>-->
 
 
 
@@ -368,20 +375,10 @@
     <h2>Тестирование</h2>
 
     <ul>
-        <li>Юнит тестирование</li>
-        <li class="next">Тестирование производительности</li>
-        <li class="next"><strong>Функциональное тестирование</strong></li>
-    </ul>
-
-</div></section>
-
-<section class="slide"><div>
-    <h2>Функциональное тестирование</h2>
-
-    <ul>
-        <li>Selenium</li>
-        <li class="next">Веб сервисы</li>
-        <li class="next"><strong><a href="http://dalekjs.com/">Dalek.js</a></strong></li>
+        <li>Юнит-тестирование</li>
+        <li class="next">Тестирование быстродействия</li>
+        <li class="next">CSS/image-regression тесты</li>
+        <li class="next"><strong>Функциональное тестирование с <a href="http://dalekjs.com/">Dalek.js</a></strong></li>
     </ul>
 
 </div></section>
@@ -442,103 +439,125 @@
     <ul>
         <li><a href="http://harpjs.com/docs/environment/lib">Harp express middleware</a></li>
         <li class="next"><a href="http://harp.io">harp.io</a> - хостинг с деплоем из Dropbox</li>
-        <li class="next">Быстрой вывод в сеть с <a href="https://meetfinch.com/">Finch</a> <span class="lp">(или <a href="https://ngrok.com/">ngrok</a>)</span></li>
+        <li class="next">Быстрый вывод в сеть с <a href="https://meetfinch.com/">Finch</a> <span class="lp">(или <a href="https://ngrok.com/">ngrok</a>)</span></li>
     </ul>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Свои заготовки c Грантом</h2>
+    <h2>Автоматизация автоматизации</h2>
+
+    Настройка рабочего окружения за вас:
 
     <ul>
-        <li>Определяем требования</li>
-        <li class="next">Настраиваем плагины под себя</li>
-        <li class="next">Учимся у <a href="https://github.com/Integralist/Grunt-Boilerplate">других</a></li>
-        <li class="next">Chrome + Grunt = <a href="https://github.com/vladikoff/grunt-devtools">grunt-devtools</a></li>
-        <li class="next">Скаффолдинг с <a href="http://nano.sapegin.ru/all/sozdanie-faylov-i-struktury-proekta-po-shablonam-s-pomoschyu-gru">Grunt-init</a></li>
+        <li><a href="https://incident57.com/codekit/">Codekit</a>, <a href="http://alphapixels.com/prepros/">Prepros App</a> — препроцессинг, сервер, live reload</li>
+        <li class="next"><a href="http://mixture.io/">Mixture</a> + деплой, шаблонизация</li>
+        <li class="next"><a href="https://codio.com/">Codio</a> + IDE</li>
     </ul>
-
-    <p class="note" style="margin-top: 2em;"><a class="lp" href="http://frontender.info/grunt-is-not-weird-and-hard/">Grunt для начинающих</a></p>
 </div></section>
 
 <section class="slide"><div>
-    <h2>Скаффолдинг</h2>
-
-    <strong><a href="http://frontender.info/skaffolding-dlya-frontenderov/">Yeoman</a></strong>
+    <h2>Стартовые заготовки</h2>
 
     <ul>
-        <li>На основе Yo, Grunt, Bower</li>
-        <li class="next">600+ готовых <a href="http://yeoman.io/community-generators.html">генераторов</a></li>
-        <li class="next">Как <a href="http://frontender.info/generator-yeoman/">написать свой генератор</a></li>
+        <li><a href="https://developers.google.com/web/starter-kit/">Google Web Starter Kit</a></li>
+        <li><a href="http://yeoman.io/generators/official.html">Yeoman-генераторы</a></li>
+        <li class="next">Легкие обертки над технологиями — <a href="http://www.linemanjs.com/">Lineman</a></li>
     </ul>
 </div></section>
 
-<section class="slide cover clean"><div>
+<!--<section class="slide"><div>-->
+    <!--<h2>Свои заготовки c Грантом</h2>-->
 
-    <h2>Демонстрация работы yo</h2>
+    <!--<ul>-->
+        <!--<li>Определяем требования</li>-->
+        <!--<li class="next">Настраиваем плагины под себя</li>-->
+        <!--<li class="next">Учимся у <a href="https://github.com/Integralist/Grunt-Boilerplate">других</a></li>-->
+        <!--<li class="next">Chrome + Grunt = <a href="https://github.com/vladikoff/grunt-devtools">grunt-devtools</a></li>-->
+        <!--<li class="next">Скаффолдинг с <a href="http://nano.sapegin.ru/all/sozdanie-faylov-i-struktury-proekta-po-shablonam-s-pomoschyu-gru">Grunt-init</a></li>-->
+    <!--</ul>-->
 
-	<div class="video_wrapper">
-        Что бы посмотреть видео, откройте, пожалуйста, презентацию в браузере с поддержкой .mp4 или .webm.
+    <!--<p class="note" style="margin-top: 2em;"><a class="lp" href="http://frontender.info/grunt-is-not-weird-and-hard/">Grunt для начинающих</a></p>-->
+<!--</div></section>-->
 
-		<video preload style="left: -80px; height: 120%;">
-	        <source src="videos/yo.mp4" type="video/mp4;">
-	        <source src="videos/yo.webm" type="video/webm;">
-	    </video>
-    </div>
-</div></section>
+<!--<section class="slide"><div>-->
+    <!--<h2>Скаффолдинг</h2>-->
 
-<section class="slide"><div>
-    <h2>Зависимости</h2>
+    <!--<strong><a href="http://frontender.info/skaffolding-dlya-frontenderov/">Yeoman</a></strong>-->
 
-    <a href="http://bower.io/">Bower</a> – <a href="https://www.npmjs.org/">NPM</a> для клиентского JS
+    <!--<ul>-->
+        <!--<li>На основе Yo, Grunt, Bower</li>-->
+        <!--<li class="next">600+ готовых <a href="http://yeoman.io/community-generators.html">генераторов</a></li>-->
+        <!--<li class="next">Как <a href="http://frontender.info/generator-yeoman/">написать свой генератор</a></li>-->
+    <!--</ul>-->
+<!--</div></section>-->
 
-    <pre style="margin-top: 1.5em">
-        <code class="next">bower <mark>init</mark></code>
-        <code class="next">bower <mark>install jquery</mark></code>
-        <code class="next">bower <mark>install https://github.com/foo/bar.git</mark></code>
-    </pre>
-</div></section>
+<!--<section class="slide cover clean"><div>-->
 
-<section class="slide"><div>
-    <h2>bower.json</h2>
+    <!--<h2>Демонстрация работы yo</h2>-->
 
-    <pre style="margin-top: 1.5em">
-        <code>"dependencies": { </code>
-        <code>  <mark>"jquery"</mark>: "~2.1.0",</code>
-        <code>  <mark>"font-awesome"</mark>: "~3.1.1"</code>
-        <code>}</code>
-    </pre>
-</div></section>
+	<!--<div class="video_wrapper">-->
+        <!--Что бы посмотреть видео, откройте, пожалуйста, презентацию в браузере с поддержкой .mp4 или .webm.-->
 
-<section class="slide"><div>
-    <h2>Bower</h2>
+		<!--<video preload style="left: -80px; height: 120%;">-->
+	        <!--<source src="videos/yo.mp4" type="video/mp4;">-->
+	        <!--<source src="videos/yo.webm" type="video/webm;">-->
+	    <!--</video>-->
+    <!--</div>-->
+<!--</div></section>-->
 
-    <ul>
-        <li>Bower + <a href="https://github.com/passy/google-cdn">google-cdn</a></li>
-        <li class="next"><a href="https://github.com/sapegin/bower-update">Обновить зависимости</a> до последней версии</li>
-    </ul>
-</div></section>
+<!--<section class="slide"><div>-->
+    <!--<h2>Зависимости</h2>-->
 
-<section class="slide"><div>
-    <h2>Настройка среды</h2>
+    <!--<a href="http://bower.io/">Bower</a> – <a href="https://www.npmjs.org/">NPM</a> для клиентского JS-->
 
-    <ul>
-        <li>Автоустановка NodeJS и зависимостей из NPM</li>
-        <li class="next"><a href="http://www.vagrantup.com/">Vagrant</a></li>
-    </ul>
-</div></section>
+    <!--<pre style="margin-top: 1.5em">-->
+        <!--<code class="next">bower <mark>init</mark></code>-->
+        <!--<code class="next">bower <mark>install jquery</mark></code>-->
+        <!--<code class="next">bower <mark>install https://github.com/foo/bar.git</mark></code>-->
+    <!--</pre>-->
+<!--</div></section>-->
 
-<section class="slide"><div>
-    <h2>Vagrant</h2>
+<!--<section class="slide"><div>-->
+    <!--<h2>bower.json</h2>-->
 
-    <pre>
-        <code>vagrant <mark>init your-environment</mark></code>
-        <code>vagrant <mark>up</mark></code>
-        <code class="next">vagrant <mark>ssh</mark></code>
-    </pre>
-</div></section>
+    <!--<pre style="margin-top: 1.5em">-->
+        <!--<code>"dependencies": { </code>-->
+        <!--<code>  <mark>"jquery"</mark>: "~2.1.0",</code>-->
+        <!--<code>  <mark>"font-awesome"</mark>: "~3.1.1"</code>-->
+        <!--<code>}</code>-->
+    <!--</pre>-->
+<!--</div></section>-->
+
+<!--<section class="slide"><div>-->
+    <!--<h2>Bower</h2>-->
+
+    <!--<ul>-->
+        <!--<li>Bower + <a href="https://github.com/passy/google-cdn">google-cdn</a></li>-->
+        <!--<li class="next"><a href="https://github.com/sapegin/bower-update">Обновить зависимости</a> до последней версии</li>-->
+    <!--</ul>-->
+<!--</div></section>-->
+
+<!--<section class="slide"><div>-->
+    <!--<h2>Настройка среды</h2>-->
+
+    <!--<ul>-->
+        <!--<li>Автоустановка NodeJS и зависимостей из NPM</li>-->
+        <!--<li class="next"><a href="http://www.vagrantup.com/">Vagrant</a></li>-->
+    <!--</ul>-->
+<!--</div></section>-->
+
+<!--<section class="slide"><div>-->
+    <!--<h2>Vagrant</h2>-->
+
+    <!--<pre>-->
+        <!--<code>vagrant <mark>init your-environment</mark></code>-->
+        <!--<code>vagrant <mark>up</mark></code>-->
+        <!--<code class="next">vagrant <mark>ssh</mark></code>-->
+    <!--</pre>-->
+<!--</div></section>-->
 
 <section class="slide shout"><div>
-    <h2 style="font-size:90px;"><a href="http://bit.ly/automation-bundle">bit.ly/automation-bundle</a></h2>
+    <h2 style="font-size:90px; color: #414141; line-height: 1.3;">Все вместе <a href="http://bit.ly/automation-bundle">bit.ly/automation-bundle</a></h2>
 </div></section>
 
 <section class="slide shout" id="suffer2"><div>
@@ -552,7 +571,7 @@
         <li><a href="http://twitter.com/operatino">@operatino</a></li>
         <!--<li><a href="mailto:r@rhr.me">r@rhr.me</a></li>-->
         <li><a href="http://toHTML.it">toHTML.it</a></li>
-        <li>Мастер-класс в Риге — <a href="http://bit.ly/riga-automation">bit.ly/riga-automation</a></li>
+        <li>Мастер-класс в Киеве — <a href="http://bit.ly/kiev-automation">bit.ly/kiev-automation</a></li>
     </ul>
     <p style="margin-top: 1em;">Слайды презентации — <a href="http://rhr.me/pres/automation">rhr.me/pres/automation</a></p>
 </div></section>
